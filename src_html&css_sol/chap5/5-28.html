@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>CSS Table Property(table-layout)</title>
+	
+	<style type="text/css">
+	table { table-layout: fixed; border: 1px solid black; }
+	tr, td { border: 1px solid black; }
+	
+	.table {display: flex; border: 1px solid black;}
+	.table div {display:table-row; border: 1px solid black;}
+	.table div>span {display: table-cell;}
+
+	</style>
+</head>
+<body>
+	<table>
+		<tr><td width="150">Row1 Col1</td><td width="200">Row1 Col2</td>
+			<td width="250">Row1 Col3</td></tr>
+		<tr><td>Row2 Col1</td><td>Row2 Col2</td><td>Row2 Col3</td></tr>
+	</table><br>
+	<table>
+		<colgroup>
+			<col width="250"><col width="200"><col width="150">
+		</colgroup>
+		<tr><td>Row1 Col1</td><td>Row1 Col2</td><td>Row1 Col3</td></tr>
+		<tr><td>Row2 Col1</td><td>Row2 Col2</td><td>Row2 Col3</td></tr>
+	</table>
+	<div class="table">
+		<div><span width="150">Row1 Col1</span><span width="200">Row1 Col2</span>
+			<span width="250">Row1 Col3</span></div>
+		<div><span>Row2 Col1</span><span>Row2 Col2</span><span>Row2 Col3</span></div>
+	</div>
+</body>
+</html>
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

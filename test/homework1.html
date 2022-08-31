@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    h1 {text-align: center;}
+    form {display: flex; justify-content: space-around;}
+    table th {min-width: 150px;}
+    table ul {margin-top: 0; margin-bottom: 0;}
+    table ul li {display: inline;}
+    .favFruit {text-align: center;}
+    .favFruitSelect {text-align: center;}
+    .email input {max-width: 100px;}
+    .contact input {max-width: 70px;}
+    .submit {text-align: center;}
+  </style>
+</head>
+<body>
+  <h1>form control test - 회원가입</h1>
+  <form>
+    <table border="1">
+      <tr>
+        <th>이름</th>
+        <td><input type="text"></td>
+      </tr>
+      <tr>
+        <th>아이디</th>
+        <td><input type="text"> <input type="submit" value="중복확인"></td>
+      </tr>
+      <tr>
+        <th>비밀번호</th>
+        <td><input type="password"></td>
+      </tr>
+      <tr>
+        <th>비밀번호확인</th>
+        <td><input type="password"></td>
+      </tr>
+      <tr>
+        <th>성별</th>
+        <td>
+          <ul>
+            <li>
+              <label><input type="radio" name="vote-answer" value="man">남</label>
+            </li>
+            <li>
+              <label><input type="radio" name="vote-answer" value="woman">여</label>
+            </li>
+          </ul>
+        </td>
+      </tr>
+      <tr class="favFruit">
+        <th colspan="2">좋아하는 과일</th>
+      </tr>
+      <tr class="favFruitSelect">
+        <td colspan="2">
+          <ul>
+          <li><label><input type="checkbox">사과</label></li>
+          <li><label><input type="checkbox">수박</label></li>
+          <li><label><input type="checkbox">딸기</label></li>
+          <li><label><input type="checkbox">포도</label></li>
+          <ul>
+        </td>
+      </tr>
+      <tr class="email">
+        <th>이메일</th>
+        <td><input type="text"> @ <select><option>네이버</option></select> <input type="text"></td>
+      </tr>
+      <tr class="contact">
+        <th>연락처</th>
+        <td><select><option>02</option></select> - <input type="text"> - <input type="text"></td>
+      </tr>
+      <tr class="submit">
+        <td colspan="2"><input type="submit" value="회원가입"> <input type="button" value="초기화"></td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>
+
+
